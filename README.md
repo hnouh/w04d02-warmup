@@ -25,6 +25,12 @@ Explanation: 'e' is the letter that was added.
 ```ruby
 
 def find_difference(s , t)
+chars = s.chars() 
+chars2 = t.chars() 
+
+if(chars!=chars2)
+puts chars2-chars
+end
 
 end
 
@@ -52,6 +58,12 @@ Output: 8
 ```ruby
 
 def missing_num(arr)
+
+sortArr=arr.sort()
+
+fullArr=(sortArr[0]..sortArr[arr.length-1]).to_a
+
+puts fullArr - sortArr
 
 end
 
